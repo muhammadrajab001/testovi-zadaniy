@@ -1,0 +1,19 @@
+{
+  "name": "muhammad",
+  "version": "1.0.0",
+  "description": "NodeJS Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "3.1.9",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.0"
+  }
+}

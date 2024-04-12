@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналитик</title>
+ <link rel="stylesheet" href="analytics.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <header>
+        <div class="cart_header">
+            <div class="header_navbar">
+                <img class="picture_a" src="img/a/new logo.svg" alt="">
+                <a class="text_a_1" href="index.html">Главная</a>
+                <a class="text_a_1" href="">Аналитика</a>
+                <img class="pictere_a_1" src="img/a/User.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart_main">
+            <div class="main_cart">
+              <div class="cart_main_1">
+                    <img class="pictere_main" src="img/a/unknown device.svg" alt="">
+                    <p class="text_main">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
+                    <p class="data_main">S1.4.I14-9.001   00-024004</p>
+                    <select class="main_option">
+                        <option value="1">В работе</option>
+    
+                    </select>
+                    <i class=" hearth_main fa-solid fa-heart"></i>
+                    <i class="gear_main fa-solid fa-gear"></i>
+              </div>
+            </div>
+            <span>
+                <div class="cart_span">
+                    <select class="span_option">
+                        <option value="4">Работа прибора </option>
+                         
+                    </select>
+                    <div class="clock_pdf">
+                        <i class="clock_span  material-symbols-outlined">
+                            alarm_on
+                            </i>
+                        <button class="btn" onclick="savePDF()">Сохранить PDF</button>
+                 
+                            
+                            <i class="vert_span  material-symbols-outlined">
+                                more_vert
+                                </i>
+                     </div>    
+                    <form class="input_span">
+                        <input type="datetime-local">
+                        <input type="datetime-local">
+                    
+                  </form>
+           <div class="btn_span">
+                      <button class="btn_2">День</button>
+                            <button class="btn_1">Неделя</button>
+                            <button class="btn_1">2 недели</button>
+                            <button class="btn_1">Месяц</button>
+                            <button class="btn_1">3 месяца</button>
+                            <button class="btn_1"> Полгода</button>
+           </div>
+                </div>
+            </span>
+            <div class="text">
+     
+                <ul class="p_ul">
+                        <p>Начало</p>
+                        <p>Тип работ</p>
+                        <p>Работы</p>
+                </ul>
+                    <p class="cart_p">Результат</p>
+                    <p class="cart_p_1">Пользователь</p>
+                </div>
+            </div>
+            <div class="cart_p_3">
+                <p class="text_cart">09.10.2021, 15:46</p>
+                <p class="text_cart_1"> В работе Измерение</p>
+       
+                <p class="text_cart_2">Образец/серия: 000100057935_170000010325_0000251849</p>
+                <i class=" check_list fa-solid fa-check"></i>
+                <p class="check">morozovava</p>
+        
+        </div>
+     
+    </main>
+
+    <footer class="container">
+        <div class="cart_footer">
+            <div class="footer_cart">
+<p class="text_footer">12.10.202112:17</p>
+<p class="text_footer_1">В работе Калибровка</p>
+
+<ul class="list_footer">
+    <p>Номер колонки:Колонка 2</p>
+    <p>Образец:Образец 2</p>
+    <p>Образец:образец 1 </p>
+    <p>Метод:метов тестовый</p>
+    <p>Номер колонки:Колонка 1</p>
+</ul>
+
+
+    <p class="comment_footer">Промывка с указанием вещества: Вещество....</p>
+        <i class=" check_footer   fa-solid fa-check"></i>
+        <p class="check_in_footer" >morozovava</p>
+
+</div>
+        </div>
+    </footer>
+ 
+
+    <script>
+  function savePDF() {
+  
+    const pdfContent = 'Hello, World!';
+    
+  
+    const blob = new Blob([pdfContent], {type: 'application/pdf'});
+    
+
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'hello.pdf';
+    a.click();
+}
+    </script>
+    <script src="a.js"></script>
+</body>
+</html>
